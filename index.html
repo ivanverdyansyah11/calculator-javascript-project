@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project with HTML-CSS-JavaScript</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="calculator-card p-4 rounded-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="calculator-field p-4 fs-5 fw-semibold text-end">12</p>
+                        </div>
+                    </div>
+                    <div class="row calculator-button mt-3">
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3"><button>Cl</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button>DEL</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button>%</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-end"><button data-operator="/">/</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3"><button data-number="7">7</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button data-number="8">8</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button data-number="9">9</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-end"><button data-operator="*">*</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3"><button data-number="4">4</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button data-number="5">5</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button data-number="6">6</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-end"><button data-operator="-">-</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3"><button data-number="1">1</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button data-number="2">2</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-center"><button data-number="3">3</button></div>
+                        <div class="fs-6 fw-semibold mb-2 mt-1 col-3 d-flex justify-content-end"><button data-operator="+">+</button></div>
+                        <div class="fs-6 fw-semibold mt-1 col-3"><button data-number=".">.</button></div>
+                        <div class="fs-6 fw-semibold mt-1 col-3 d-flex justify-content-center"><button data-number="0">0</button></div>
+                        <div class="fs-6 fw-semibold mt-1 col-6"><button class="button-full">=</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body> 
+</html>
