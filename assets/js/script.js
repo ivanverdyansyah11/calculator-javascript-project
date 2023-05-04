@@ -1,13 +1,21 @@
-const buttonCalc = document.querySelectorAll('button');
-const inputCalc = document.querySelector('.calculator-field');
-const dataNumber = document.querySelectorAll("[data-number]");
-const dataOperator = document.querySelectorAll("[data-operator]");
+const calculatorField = document.querySelector('.calculator-field');
+const dataValue = document.querySelectorAll('[data-value]');
 
-// buttonCalc.forEach(e => {
-//     e.addEventListener('click', function(i) {
-//         let dataNumber = i.target.getAttribute("data-number");
-//         let dataOperator = i.target.getAttribute("data-operator");
-//         let inputData = inputCalc.innerHTML;
-//         inputCalc.innerHTML = inputData + dataNumber;
-//     });
-// });
+dataValue.forEach(data => {
+    data.addEventListener('click', function() {
+        let dataCalculatorField = calculatorField.innerHTML;
+        calculatorField.innerHTML = dataCalculatorField + data.innerHTML;
+    });
+});
+
+function allClearData() {
+    calculatorField.innerHTML = '';
+}
+
+function deleteData() {
+    calculatorField.innerHTML = calculatorField.innerHTML.toString().slice(0,-1);
+}
+
+function equalsData() {
+    calculatorField.innerHTML = eval(calculatorField.innerHTML);
+}
